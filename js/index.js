@@ -125,6 +125,18 @@ email[7].textContent = siteContent.contact.email;
 
 const copyRight = document.querySelectorAll("p");
 copyRight[8].textContent = siteContent.footer.copyright;
-// footer: {
-//   copyright: "Copyright Great Idea! 2018"
-// }
+/// ===== end =====
+
+const newColor = document
+    .querySelectorAll("a")
+    .forEach(element => (element.style.color = "green"));
+
+const nameUpTop = (document.createElement("a").textContent =
+    "By Aaron Pleitez");
+document.querySelector("nav").prepend(nameUpTop);
+
+const newData = (document.createElement("a").textContent = "Hello World!");
+
+const testTry = document.querySelector("nav");
+
+testTry.append(newData);
